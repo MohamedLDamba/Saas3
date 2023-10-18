@@ -1,0 +1,359 @@
+@media (max-width: 768px) {
+ 
+  [aria-controls="navbarNav"] {
+  display: block;
+  position: absolute;
+  right: 10%;
+  width: 30%;
+  height: 30%;
+  outline: none;
+  background: transparent;
+ }
+
+ [aria-expanded="false"]~ ul{
+  display: none;
+ }
+
+ [aria-expanded="true"]~ ul{
+  display: block;
+  position: absolute;
+  left: 9%;
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+ }
+
+.navbar-nav li:last-child {
+  position: absolute;
+    top: 91%;
+    left: 37%;
+}
+
+  .navbar-nav {
+        display: block;
+    }
+
+    [aria-expanded="true"] ~ .navbar-nav {
+      display: flex;
+      flex-direction: row;
+    }    
+
+    .logos {
+      margin-top: 8rem;
+      gap: 3rem;
+    }
+
+  .features {
+      grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    }
+
+    .prospective , .team-sides{
+        flex-wrap: wrap;
+  }
+
+  article button{
+    height: 30%;
+  }
+
+  .team-content{
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+}
+.team-content h1{
+  width: 100%;
+}
+
+.top{margin-bottom: 17rem;}
+
+
+
+.flex-container {
+    flex-direction: column;
+    height: 50rem;
+  }
+  
+  .smile-spot {
+    align-items: center;
+  }
+  
+  .smile {
+    margin-right: 0; /* Remove the margin for vertical alignment on mobile */
+    margin-bottom: 7rem;
+    margin-top: -3rem; /* Add spacing between the smile-spot and hubspot on mobile */
+  }
+
+  .smile img:first-child {
+    height: 29rem;
+  }
+
+  .smile img:nth-child(2) {
+    position: absolute;
+    transform: translate(-35%, -89%);
+    height: 30rem;
+}
+
+  .hubspot{
+    text-align: center;
+  }
+
+  .hubspot img {
+    width: 26%;
+    transform: translate(137%, 10px);
+    margin-left: 1rem;
+}
+
+.container .best{
+    margin-top: 115%;
+}
+.pricing-plus{
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-plus .pricing{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.hire-us{
+  display: flex;
+  flex-direction: column;
+}
+
+.container .hire-us {
+  background-color: navy;
+  height: 95rem;
+  width: 108%;
+}
+
+.hire-1{
+display: flex;
+width: 100%;
+}
+
+.part1{
+  width: 40%;
+  text-align: center;
+}
+
+.part2{
+  width: 40%;
+  margin-left: 2rem;
+}
+
+.sec-ft .resources, .sec-ft .documentation, .sec-ft .feat, .sec-ft .company {
+  width: 45%;
+  flex-wrap: wrap;
+}
+
+.features{
+  gap: 70px;
+}
+
+
+}
+
+  @media (max-width: 375px) {
+    
+    [aria-expanded="true"] ~ .navbar-nav {
+      flex-direction: column;
+      margin-left: -8rem;
+    height: 95%;
+  }
+  
+  [aria-controls="navbarNav"] {
+    width: 53%;
+   
+}
+
+
+  .nav-link button{
+    position: relative;
+    top: 5rem;
+
+  }
+
+
+  .logos {
+    margin-top: 3rem;
+  }
+
+  .logo-group{
+    width: 90%;
+  }
+
+  .logo-group img{
+    width: 50px;
+  }
+
+    .navbar a img {
+      width: 57%;
+  }
+
+  .team-sides, .features{
+    width: 50%;
+}
+    
+    .features {
+      grid-template-columns: 1fr;
+    }
+
+    .team-sides {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .team-content {
+      text-align: center;
+    }
+
+    .top{margin-bottom: 17rem;}
+
+    body{margin-left: 4rem;}
+
+  
+
+    .prospective{
+        flex-wrap: wrap;
+    }
+
+   
+
+  .bullets , .companies{
+    flex-direction: column;
+    gap: 5rem;
+    }
+
+    .companies ul{flex-direction: column;}
+
+    .companies ul:last-child{width: 100%}
+    
+    .hire-2 .hiring .fl, .bc{
+      display: flex;
+    flex-direction: column;
+    height: 7rem;
+    }
+
+    .fl{
+      width: 95%;
+    }
+
+
+    .container .best {
+        margin-top: 109%;
+    }  
+
+    .smile {    margin-left: 5rem;}
+
+    .smile img:first-child {
+      width: 8rem;
+    height: 30rem;
+    left: -8rem;
+    top: -1rem;
+    }
+
+    .smile img:nth-child(2) {
+      width: 11rem;
+    height: 15rem;
+    left: 5rem;
+    top: 32rem;
+    }
+
+    .hubspot h3, .hubspot h4 {
+      position: relative;
+      top: 8rem;
+    font-size: 1.2rem;
+    }
+
+    .hubspot{
+      margin-top: -13rem;
+    }
+
+    .plus{
+      grid-template-columns: repeat(auto-fit,minmax(51%,1fr));
+    }
+
+    .container .hire-us {
+    height: 131rem;
+    display: flex;
+    flex-direction: column;
+    }
+  
+
+    .hire-1{
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+      }
+
+    .hire-2{
+      width: 80%;
+      height: 76rem;
+    }
+      
+
+      .part1,.part2{
+        width: 80%;
+      }
+
+      form{
+        width: 76%;
+        margin: auto;
+
+      }
+
+      form .hiring{
+        flex-direction: column;
+      }
+
+      .privacy a:nth-child(2){
+        display: none;
+      }
+
+      
+      .hire-2 h3, input, textarea,select {
+        width: 100%;
+        margin: auto;
+      }
+
+      #check{    width: 57%;}
+
+      .start{
+        height: 100%;
+    }
+
+
+      .top-bottom {
+        flex-direction: column;
+    }
+
+    .sec-ft {
+      width: 109%;
+      flex-direction: column;
+  }
+
+  .sec-ft .resources, .sec-ft .documentation, .sec-ft .feat, .sec-ft .company {
+    width: 110%;
+  }
+
+  .extra1 ul, .extra2 ul, .extra3 ul{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.extra, .extra-23 {
+  flex-direction: column;
+  margin: auto;
+}
+
+.extra1 ul:last-child, .extra2 ul:last-child, .extra3 ul:last-child{
+  margin: auto;
+  align-items: center;
+}
+  
+
+}
