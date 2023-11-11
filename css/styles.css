@@ -3,13 +3,6 @@ body{
     margin: auto;
 }
 
-.container{
-    display: flex; /* Use flexbox to center content */
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Vertically center content */
-     align-items: center;
-    
-}
 
 .navbar{
     position: fixed;
@@ -78,8 +71,8 @@ body{
 
 
 
-.top .container{
-    position: absolute;
+.logo-container{
+    position: relative;
     top: 9rem;
     width: 100%;
 }
@@ -151,14 +144,15 @@ body{
     width: 100%;
 }
 
-.container .benefits, .container .features, .container .prospective, .container .why, .container .video
-,.container .flex-container, .container .best, .container .price-title, .container .pricing-plus,
-.container .hire-us, .container .bottom
-{
+
+.benefits-container, .prospective-container, .why-container,.video-container, .flex-container, .best-container,
+.price-title-container, .hire-container, .bottom-container{
     position: relative;
-    top: 34rem;
+    top: 11rem;
     text-align: center;
+    margin: auto;
 }
+
 
 .benefits h2, .why-top h2{
     font-size:  2rem;
@@ -189,10 +183,11 @@ article, figure, figure img, .video img{
     width: 100%;
 }
 
-.bullets{
+.bullets{ 
     display: flex;
     justify-content: space-around;
-}
+    flex-direction: row;
+ } 
 
 .bullets h5{font-size: 12px;}
 
@@ -219,7 +214,7 @@ article, figure, figure img, .video img{
     color:blue;
 }
 
-.container .video {
+.video-container {
     position: relative;
     display: flex;
     justify-content: center;
@@ -351,6 +346,11 @@ article, figure, figure img, .video img{
 
 .pricing h2 span{
     font-size: 1rem;
+}
+
+.hire-container{
+    background: navy;
+    height: 50rem;
 }
 
 .hire-1{   

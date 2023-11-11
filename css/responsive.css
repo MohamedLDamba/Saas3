@@ -3,7 +3,7 @@
   [aria-controls="navbarNav"] {
   display: block;
   position: absolute;
-  right: 10%;
+  right: 3%;
   width: 30%;
   height: 30%;
   outline: none;
@@ -39,21 +39,51 @@
     }    
 
     .logos {
-      margin-top: 8rem;
+      margin: auto;
+    position: relative;
+    top: 5rem;
       gap: 3rem;
     }
 
   .features {
-      grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     }
+
+  .box{
+    width: 18rem;
+    margin: auto;
+  }
 
     .prospective , .team-sides{
         flex-wrap: wrap;
   }
 
-  article button{
-    height: 30%;
+  .prospective{
+    width: 10rem;
+    font-size: 1.3rem;
+    margin: auto;
   }
+
+  .prospective button{
+    width: 6rem;
+    font-size: .8rem;
+    height: 2rem;
+  }
+
+  .prospective h2{
+    font-size: 1.4rem;
+    width: 30rem;
+    margin-left: -8rem;
+  }
+
+  .prospective img{
+    width: 30rem;
+    margin-left: -12rem;
+
+  }
+
+
+  
 
   .team-content{
     width: 100%;
@@ -72,6 +102,10 @@
     flex-direction: column;
     height: 50rem;
   }
+
+  .why-top{
+    margin-left: 2rem;
+  }
   
   .smile-spot {
     align-items: center;
@@ -89,7 +123,7 @@
 
   .smile img:nth-child(2) {
     position: absolute;
-    transform: translate(-35%, -89%);
+    transform: translate(-61%, -87%);
     height: 30rem;
 }
 
@@ -109,23 +143,62 @@
 .pricing-plus{
   display: flex;
   flex-direction: column;
+  position: relative;
+    top: 14rem;
+    width: 720px;
+}
+
+.companies, .title p, .price-title h2{
+  position: relative;
+    top: 27rem;
+}
+
+.price-title p{
+  position: relative;
+  top: 25rem;
+
+}
+.pricing{
+  position: relative;
+  top: 8rem;
+}
+
+.plus{
+  position: relative;
+    top: 9rem;
+    grid-gap: 1rem;
+    margin-left: 2rem;
+}
+
+.plus p{font-size: 1.3rem;}
+
+.hire-container{
+  position: relative;
+  top: 34rem;
+  margin-left: 2rem;
+  width: 43.125rem;
 }
 
 .pricing-plus .pricing{
   text-align: center;
   margin-bottom: 3rem;
+  margin-left: 2rem;
+  width: 40rem;
 }
 
 .hire-us{
   display: flex;
   flex-direction: column;
+  background-color: navy;
+    height: 75rem;
+    width: 43.75rem;
 }
 
-.container .hire-us {
+/* .container .hire-us { 
   background-color: navy;
   height: 95rem;
   width: 108%;
-}
+ } */
 
 .hire-1{
 display: flex;
@@ -142,19 +215,26 @@ width: 100%;
   margin-left: 2rem;
 }
 
+.bottom-container{
+  position: relative;
+  top: 60rem;
+  margin-left: 2rem;
+}
+
 .sec-ft .resources, .sec-ft .documentation, .sec-ft .feat, .sec-ft .company {
   width: 45%;
   flex-wrap: wrap;
 }
 
 .features{
-  gap: 70px;
+  gap: 25px;
+  margin-left: 2rem;
 }
 
 
 }
 
-  @media (max-width: 375px) {
+  @media (max-width: 376px) {
     
     [aria-expanded="true"] ~ .navbar-nav {
       flex-direction: column;
@@ -194,10 +274,17 @@ width: 100%;
   .team-sides, .features{
     width: 50%;
 }
-    
-    .features {
-      grid-template-columns: 1fr;
+
+.team-content h1, .team-content p {
+  width: 18rem;
+}
+   
+
+     .features {
+      grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+      margin: 1rem;
     }
+    
 
     .team-sides {
         display: flex;
@@ -209,10 +296,87 @@ width: 100%;
       text-align: center;
     }
 
+    .team-content, .logos , .benefits-container{
+      margin:1rem;
+    }
+
+    .logo-group,.actions{width: 18rem;}
+
+    .benefits-container{
+      position: relative;
+    top: 2rem;
+    }
+
+    .actions button{    
+      width: 8rem;
+      height: 3rem;
+    }
+
     .top{margin-bottom: 17rem;}
 
-    body{margin-left: 4rem;}
+    /* body{margin-left: 4rem;} */
 
+    .bullets {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+  }
+
+  .prospective{
+    width: 10rem;
+    font-size: 1.3rem;
+    margin: auto;
+  }
+
+  .prospective button{
+    width: 4rem;
+    font-size: .5rem;
+    height: 2rem;
+  }
+
+  .prospective h2{
+    font-size: 1.4rem;
+    width: 18rem;
+    margin-left: 1rem;
+  }
+
+  .prospective {
+    width: 19rem;
+  }
+
+  .prospective img{
+    width: 18rem;
+    margin-left: -2rem;
+  }
+
+  .video img{
+    width: 21.75rem;
+  }
+
+  article button{
+    height: 30%;
+  }
+
+  figure img{
+    margin: 1rem;
+  }
+
+  .why-top p{
+    font-size: 1rem;
+    width: 15rem;
+    margin: auto;
+  }
+
+  .bullets{
+    flex-direction: column;
+  }
+
+  .flex-container{
+    position: relative;
+    top: 20rem;
+  }
+
+ 
   
 
     .prospective{
@@ -223,13 +387,39 @@ width: 100%;
 
   .bullets , .companies{
     flex-direction: column;
-    gap: 5rem;
+    gap: 2rem;
+    position: relative;
+    top: 10rem;
     }
 
     .companies ul{flex-direction: column;}
 
     .companies ul:last-child{width: 100%}
+
+    .plus div{
+      width: 18rem;
+      margin: 1rem;
+    }
+
+    .part2 {
+      margin-left: 1rem;
+    }
+
+    .start button{
+      width: 5rem;
+    font-size: .8rem;
+    height: 2rem;
+    }
     
+    .hire-container, .hire-us{
+      width: 18rem;
+    }
+
+    .hire-container{
+      position: relative;
+    top: 22rem;
+    }
+
     .hire-2 .hiring .fl, .bc{
       display: flex;
     flex-direction: column;
@@ -250,29 +440,70 @@ width: 100%;
     .smile img:first-child {
       width: 8rem;
     height: 30rem;
-    left: -8rem;
+    left: -5rem;
     top: -1rem;
     }
 
     .smile img:nth-child(2) {
       width: 11rem;
     height: 15rem;
-    left: 5rem;
+    left: 9rem;
     top: 32rem;
     }
 
     .hubspot h3, .hubspot h4 {
       position: relative;
-      top: 8rem;
+      top: 3rem;
     font-size: 1.2rem;
     }
 
+    .title p, .price-title p{
+      top: 9rem;
+    }
+
+    .price-title p{
+      top: 26rem;
+    }
+
+    .price-title h2{
+      font-size: 2rem;
+    }
+
+    .price-title-container{
+      top: -5rem;
+    }
+
+
+    .pricing-plus .pricing {
+      width: 18rem; 
+    }
+
+    .pricing-plus{
+      position: relative;
+    top: 28rem;
+    }
+    
+
+    .pricing{
+      position: relative;
+    top: -2rem;
+    width: 19rem;
+    }
+
+    .pricing button{
+      width: 7rem;
+    }
+
+    .best .companies li img {width: 5rem;}
+
     .hubspot{
-      margin-top: -13rem;
+      margin-top: -19rem;
     }
 
     .plus{
       grid-template-columns: repeat(auto-fit,minmax(51%,1fr));
+      position: relative;
+    top: 1rem;
     }
 
     .container .hire-us {
@@ -291,7 +522,7 @@ width: 100%;
 
     .hire-2{
       width: 80%;
-      height: 76rem;
+      height: 73rem;
     }
       
 
@@ -328,6 +559,9 @@ width: 100%;
 
       .top-bottom {
         flex-direction: column;
+        position: relative;
+        top: -8rem;
+        margin-right: 4rem;
     }
 
     .sec-ft {
@@ -336,7 +570,7 @@ width: 100%;
   }
 
   .sec-ft .resources, .sec-ft .documentation, .sec-ft .feat, .sec-ft .company {
-    width: 110%;
+    width: 96%;;
   }
 
   .extra1 ul, .extra2 ul, .extra3 ul{
@@ -353,6 +587,14 @@ width: 100%;
 .extra1 ul:last-child, .extra2 ul:last-child, .extra3 ul:last-child{
   margin: auto;
   align-items: center;
+}
+
+.hire-us{
+ height: 124rem;
+}
+
+.bottom-container{
+  top: 109rem;
 }
   
 
